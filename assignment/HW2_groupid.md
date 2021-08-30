@@ -20,7 +20,7 @@ summary(survey$Exer[survey$Sex == 'Female'])
 # Freq None Some NA's 
   49   11   58    1 
 ```
-4.) Number of people using their left hand to write by gender.
+4.) The number of people writing with their left hand was more male than female.
 ```{R}
 table(survey$Sex[survey$W.Hnd == 'Left'])
 # Female   Male 
