@@ -48,7 +48,7 @@ AvgHeight <- c(AMH,AFH)
 table <- data.frame(gender,AvgAge,AvgHeight)
 View(table)
 ```
-6.) The heaviest female cat is hevier than male cats body weight mean.
+6.) The heaviest female cat is heavier than male cats body weight mean.
 ```{R}
 max(cats$Bwt[cats$Sex == 'F'])
 # 3
