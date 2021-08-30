@@ -14,7 +14,7 @@ mean(cats$Hwt[cats$Sex == 'F'])
 table(survey$Sex[survey$Smoke == 'Heavy'])
 # male = 6, female = 5
 ```
-3.) The number of male students smoked heavy more than female students.
+3.) Statistical number of female who exercise.
 ```{R}
 summary(survey$Exer[survey$Sex == 'Female'])
 # Freq None Some NA's 
