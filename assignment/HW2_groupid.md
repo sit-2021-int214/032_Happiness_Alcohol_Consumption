@@ -55,7 +55,7 @@ max(cats$Bwt[cats$Sex == 'F'])
 mean(cats$Bwt[cats$Sex == 'M'])
 # 2.9
 ```
-7.) The difference in weight between male and female cats.
+7.) Difference in the heaviest body weight between male and female cats.
 ```{R}
 maxBodyMCat <- max(cats$Bwt[cats$Sex == 'M']) 
 # 3.9
