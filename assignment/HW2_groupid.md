@@ -70,6 +70,13 @@ table(survey$Sex[survey$Smoke == "Regul"])
 #Female   Male 
    5       12
 ```
+9.) The number of students under the age of 18 that used to smoke. 
+```{R}
+StuNever <- sum(survey$Smoke[survey$Age < 18] == 'Never')
+Student <- sum(survey$Age < 18)
+Student - StuNever
+# 12
+```
 ### Team: วชสต.
 1. นายพิชญะ ไพรินทร์ StudentID: 63130500086
 2. นายสิรภพพ์ ใช้เทียมวงษ์ StudentID: 63130500117
