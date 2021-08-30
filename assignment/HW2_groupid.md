@@ -48,6 +48,13 @@ AvgHeight <- c(AMH,AFH)
 table <- data.frame(gender,AvgAge,AvgHeight)
 View(table)
 ```
+6.) The heaviest female cat is hevier than male cats body weight mean.
+```{R}
+max(cats$Bwt[cats$Sex == 'F'])
+# 3
+mean(cats$Bwt[cats$Sex == 'M'])
+# 2.9
+```
 
 ### Team: วชสต.
 1. นายพิชญะ ไพรินทร์ StudentID: 63130500086
