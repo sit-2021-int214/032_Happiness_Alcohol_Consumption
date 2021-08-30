@@ -8,9 +8,9 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 mean(cats$Hwt[cats$Sex == 'F'])
 ```
 
-2.) Descriptive statistics Statement
+2.) The number of male students smoked heavy more than female students.
 ```{R}
-Code here
+table(survey$Sex[survey$Smoke == 'Heavy'])
 ```
 
 
