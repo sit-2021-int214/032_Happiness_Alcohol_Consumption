@@ -3,9 +3,9 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 
 ### Answer
 
-1.) From survey, most students use left hand writing.
+1.) The average weight of cat's heart
 ```{R}
-Code here
+mean(cats$Hwt[cats$Sex == 'F'])
 ```
 
 2.) Descriptive statistics Statement
