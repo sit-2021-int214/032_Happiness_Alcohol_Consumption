@@ -3,7 +3,7 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 
 ### Answer
 
-1.) The average weight of cat's heart
+1.) The average weight of female cat's heart
 ```{R}
 mean(cats$Hwt[cats$Sex == 'F'])
 ```
