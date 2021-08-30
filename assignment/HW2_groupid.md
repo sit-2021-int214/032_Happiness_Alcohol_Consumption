@@ -64,6 +64,12 @@ maxBodyFCat <- max(cats$Bwt[cats$Sex == 'F'])
 maxBodyMCat - maxBodyFCat 
 # 0.9
 ```
+8.) The number of people who smoke regularly.
+```{R}
+table(survey$Sex[survey$Smoke == "Regul"])
+#Female   Male 
+   5       12
+```
 ### Team: วชสต.
 1. นายพิชญะ ไพรินทร์ StudentID: 63130500086
 2. นายสิรภพพ์ ใช้เทียมวงษ์ StudentID: 63130500117
