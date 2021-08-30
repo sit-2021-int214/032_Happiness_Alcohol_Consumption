@@ -55,7 +55,15 @@ max(cats$Bwt[cats$Sex == 'F'])
 mean(cats$Bwt[cats$Sex == 'M'])
 # 2.9
 ```
-
+7.) The difference in weight between male and female cats.
+```{R}
+maxBodyMCat <- max(cats$Bwt[cats$Sex == 'M']) 
+# 3.9
+maxBodyFCat <- max(cats$Bwt[cats$Sex == 'F']) 
+# 3
+maxBodyMCat - maxBodyFCat 
+# 0.9
+```
 ### Team: วชสต.
 1. นายพิชญะ ไพรินทร์ StudentID: 63130500086
 2. นายสิรภพพ์ ใช้เทียมวงษ์ StudentID: 63130500117
