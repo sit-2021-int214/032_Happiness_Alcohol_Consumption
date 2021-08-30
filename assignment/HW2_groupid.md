@@ -11,6 +11,7 @@ mean(cats$Hwt[cats$Sex == 'F'])
 2.) The number of male students smoked heavy more than female students.
 ```{R}
 table(survey$Sex[survey$Smoke == 'Heavy'])
+# male = 6, female = 5
 ```
 
 
