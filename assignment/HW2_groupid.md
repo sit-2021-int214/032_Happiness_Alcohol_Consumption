@@ -3,9 +3,10 @@ Explore 2 dataset that given then finding descriptive statistics and summary res
 
 ### Answer
 
-1.) The average weight of female cat's heart
+1.) The average weight of female cat's heart is 9.202128
 ```{R}
 mean(cats$Hwt[cats$Sex == 'F'])
+#  9.202128
 ```
 
 2.) The number of male students smoked heavy more than female students.
