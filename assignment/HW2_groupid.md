@@ -26,7 +26,28 @@ table(survey$Sex[survey$W.Hnd == 'Left'])
 # Female   Male 
      7     10 
 ```
+5.) From the survey table, Find average height and age of each gender show in data-frame(ถ้าช่องไหนไม่มี record ไม่ต้องนํามาคํานวณ)
+```{R}
+gender <- c("Male", "Female")
 
+AvgMaleAge <- c(survey$Age[survey$Sex == 'Male'])
+AMA <- mean(AvgMaleAge, na.rm = TRUE)
+
+AvgFemaleAge <- c(survey$Age[survey$Sex == 'Female'])
+AFA <- mean(AvgFemaleAge, na.rm = TRUE)
+
+AvgMaleHeight <- c(survey$Height[survey$Sex == 'Male'])
+AMH <- mean(AvgMaleHeight, na.rm = TRUE)
+
+AvgFemaleHeight <- c(survey$Height[survey$Sex == 'Female'])
+AFH <- mean(AvgFemaleHeight, na.rm = TRUE)
+
+AvgAge <- c(AMA,AFA)
+AvgHeight <- c(AMH,AFH)
+
+table <- data.frame(gender,AvgAge,AvgHeight)
+View(table)
+```
 
 ### Team: วชสต.
 1. นายพิชญะ ไพรินทร์ StudentID: 63130500086
