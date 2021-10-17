@@ -26,6 +26,7 @@ install.packages("stringr")
 library(readr)    
 library(stringr)   
 library(assertive)  
+library(dplyr)
 # Dataset
 happiness <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/032_Happiness_Alcohol_Consumption/main/HappinessAlcoholConsumption.csv")
 View(happiness)
