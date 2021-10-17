@@ -64,7 +64,6 @@ is.numeric(happiness$Beer_PerCapita)
 is.numeric(happiness$Spirit_PerCapita)
 
 ```
-
 output ::
 เป็น TRUE หมดเเสดงว่าเป็น numeric ทุก column
 ```
@@ -88,7 +87,6 @@ output ::
 duplicated(happiness$Country)
 
 ```
-
 output ::
 เป็น FLASE หมดเเสดงว่าไม่มีเเถวที่ประเทศซ้ำกัน
 ```
