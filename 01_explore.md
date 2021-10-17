@@ -138,7 +138,7 @@ result:
 
 code:
 ```
-
+happiness %>% group_by(Region) %>% summarise(avg = mean(HappinessScore))
 ```
 result:
 ```
