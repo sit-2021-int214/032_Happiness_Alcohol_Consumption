@@ -31,7 +31,7 @@ dataset นี้รายงานข้อมูลของคะแนนค
 
 - [01_explore](./code_eda.R) : Exploratory Data Analysis
 - [Happiness_Alcohol_Comsumption.csv](./HappinessAlcoholConsumption.csv): Dataset
-- [products_clean.csv](./products_original.csv): Clean Dataset
+- [happiness.csv](./happiness.csv): Clean Dataset
 
 ### References
 
