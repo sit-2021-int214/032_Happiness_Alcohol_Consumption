@@ -32,6 +32,7 @@ Datasets from: https://www.kaggle.com/marcospessotto/happiness-and-alcohol-consu
 
 ## Step4: Cleaning Dataset
 ทำการ check datatype ของ column ที่เป็นตัวเลขว่ามี datatype เป็น numeric จริงไหม
+ซึ่ง output ที่ได้นั้นเป็น TRUE หมดเลย เเสดงว่าเป็น numeric ทุก column
 
 ```
 # check data type
@@ -41,6 +42,11 @@ is.numeric(happiness$GDP_PerCapita)
 is.numeric(happiness$Beer_PerCapita)
 is.numeric(happiness$Spirit_PerCapita)
 
+```
+
+```
+# check duplicate
+duplicated(happiness$Country)
 ```
 
 ## Step5: Exploratory Data Analysis
