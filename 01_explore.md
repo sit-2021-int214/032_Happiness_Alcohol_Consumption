@@ -54,7 +54,7 @@ View(happiness)
      - ข้อมูลเป็นประเภท integer
 
 ## Step4: Cleaning Dataset
-###1.Check datatype ของ column ที่เป็นตัวเลขว่ามี datatype เป็น numeric จริงไหม
+### 1.Check datatype ของ column ที่เป็นตัวเลขว่ามี datatype เป็น numeric จริงไหม
 ```
 # check data type
 is.numeric(happiness$HappinessScore)
