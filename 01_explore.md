@@ -90,7 +90,7 @@ duplicated(happiness$Country)
 ```
 
 output ::
-เป็น FLASE หมดเลยเเสดงว่าไม่มีเเถวที่ประเทศซ้ำกัน
+เป็น FLASE หมดเเสดงว่าไม่มีเเถวที่ประเทศซ้ำกัน
 ```
 > duplicated(happiness$Country)
   [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
@@ -101,5 +101,14 @@ output ::
 [116] FALSE FALSE FALSE FALSE FALSE FALSE FALSE
 
 ```
+
+Check range ของ "HappinessScore" ว่าอยู่ระหว่าง 0-10 รึป่าว
+```
+
+# check range of happiness score
+assert_all_are_in_closed_range(happiness$HappinessScore, lower = 0, upper = 10)
+
+```
+ซึ่ง output ที่ได้นั้นไม่เเสดง error อะไรออกมาเเสดงว่าทุกเเถวของ column "HappinessScore" อยู่ในช่วง 0-10
 
 ## Step5: Exploratory Data Analysis
