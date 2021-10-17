@@ -32,15 +32,15 @@ Datasets from: https://www.kaggle.com/marcospessotto/happiness-and-alcohol-consu
      - เกณฑ์วัดระดับความสุข ตั้งเเต่ 0-10
      - ข้อมูลเป็นประเภท double
 5. HDI	
-     - 
+     - ข้อมูลเป็นประเภท integer
 6. GDP_PerCapita	
-     -
+     - ข้อมูลเป็นประเภท double
 7. Beer_PerCapita	
-     -
+     - ข้อมูลเป็นประเภท integer
 8. Spirit_PerCapita	
-     -
+     - ข้อมูลเป็นประเภท integer
 9. Wine_PerCapita
-     -
+     - ข้อมูลเป็นประเภท integer
 
 ## Step4: Cleaning Dataset
 ทำการ check datatype ของ column ที่เป็นตัวเลขว่ามี datatype เป็น numeric จริงไหม
