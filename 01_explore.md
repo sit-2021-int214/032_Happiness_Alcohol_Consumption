@@ -102,6 +102,7 @@ assert_all_are_in_closed_range(happiness$HappinessScore, lower = 0, upper = 10)
 ซึ่ง output ที่ได้นั้นไม่เเสดง error อะไรออกมาเเสดงว่าทุกเเถวของ column "HappinessScore" อยู่ในช่วง 0-10
 
 
+
 ## Step5: Exploratory Data Analysis
 ### 1. อยากรู้ค่าเฉลี่ยของ Happy Score ของการดื่มแอลกอฮอล์ (เบียร์ เหล้า ไวน์) ของประเทศในเเต่ละซีกโลก
 
