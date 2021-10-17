@@ -203,9 +203,16 @@ result:
 #### 5. อยากรู้ดัชนีผลิตภัณฑ์มวลรวมภายในเฉลี่ย (GDP) สูงที่สุดเเละต่ำสุดของเเต่ละภูมิภาค
 code:
 ```
+mean_gdp_each_regoin <- happiness %>% group_by(Region) %>% select(GDP_PerCapita) %>% summarise(avg = mean(GDP_PerCapita))
+mean_gdp_each_regoin %>% summarise(max = max(avg), min = min(avg))
 
 ```
 result:
 ```
-                 216.       102.     198. 
+> mean_gdp_each_regoin %>% summarise(max = max(avg), min = min(avg))
+# A tibble: 1 x 2
+    max   min
+  <dbl> <dbl>
+1  306.  8.55
+
 ```
