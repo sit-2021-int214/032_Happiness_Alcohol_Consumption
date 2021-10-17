@@ -22,7 +22,7 @@ Datasets from: https://www.kaggle.com/marcospessotto/happiness-and-alcohol-consu
 ใน dataset นี้ประกอบด้วยข้อมูลทั้งหมด 9 คอลัมน์คือ 
 1. Country ประกอบด้วยรายชื่อประเทศทั้งหมด 122 ประเทศที่เเตกต่างกัน
 2. Region	
-3. Hemisphere	
+3. Hemisphere เเบ่งออกเป็นสามอย่างคือ north south เเละ both
 4. HappinessScore	
 5. HDI	
 6. GDP_PerCapita	
