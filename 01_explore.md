@@ -17,9 +17,9 @@ Datasets from: https://www.kaggle.com/marcospessotto/happiness-and-alcohol-consu
 4.อยากรู้ว่าค่า GDP และ HDI มีผลต่อการดื่มเเอลกอฮอล์มากน้อยเพียงใดในเเต่ละประเทศ
 ```
 
-### Step2: Search datasets from Kaggle
+### Step2: Download Library and dataset
 
-### Step3: Download Library and dataset
+### Step3: 
 
 ### Step4: Explore the dataset from the original dataset
 
