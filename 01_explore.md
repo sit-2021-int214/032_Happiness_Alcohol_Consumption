@@ -54,7 +54,7 @@ View(happiness)
      - ข้อมูลเป็นประเภท integer
 
 ## Step4: Cleaning Dataset
-1.Check datatype ของ column ที่เป็นตัวเลขว่ามี datatype เป็น numeric จริงไหม
+###1.Check datatype ของ column ที่เป็นตัวเลขว่ามี datatype เป็น numeric จริงไหม
 ```
 # check data type
 is.numeric(happiness$HappinessScore)
@@ -114,41 +114,14 @@ assert_all_are_in_closed_range(happiness$HappinessScore, lower = 0, upper = 10)
 ## Step5: Exploratory Data Analysis
 ### 1. อยากรู้ค่าเฉลี่ยของ Happy Score ของการดื่มแอลกอฮอล์ (เบียร์ เหล้า ไวน์) ของประเทศในเเต่ละซีกโลก
 
-#### code:
+code:
 ```
 
 ```
-#### result:
+result:
 ```
 
 ```
 ### 2. อยากรู้ว่าประเทศไหนมีการกินแอลกอฮอล์ในแต่ละประเภทมากที่สุด
-
-#### code:
-```
-
-```
-#### result:
-```
-
-```
 ### 3. อยากรู้ค่าเฉลี่ย Happiness score ในเเต่ละ region เเล้วนํามาเทียบกัน
-
-#### code:
-```
-
-```
-#### result:
-```
-
-```
 ### 4. อยากรู้ว่าค่า GDP และ HDI มีผลต่อการดื่มเเอลกอฮอล์มากน้อยเพียงใดในเเต่ละประเทศ
-
-#### code:
-```
-
-```
-#### result:
-```
-
-```
