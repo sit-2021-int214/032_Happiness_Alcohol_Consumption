@@ -19,7 +19,7 @@ Datasets from: https://www.kaggle.com/marcospessotto/happiness-and-alcohol-consu
 ## Step2: Download Library and dataset
 
 ## Step3: Explore the dataset from the original dataset
-ใน dataset ฯี้มีข้อมูลทั้งหมด 9 คอลัมน์คือ 
+ใน dataset นี้มีข้อมูลทั้งหมด 9 คอลัมน์คือ 
 1. Country	
 2. Region	
 3. Hemisphere	
