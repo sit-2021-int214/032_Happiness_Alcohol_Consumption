@@ -23,6 +23,6 @@ Datasets from: https://www.kaggle.com/marcospessotto/happiness-and-alcohol-consu
 
 ### Step4: Explore the dataset from the original dataset
 
-### Step5: Cleaning Dataset
+### Step5: Checking And Cleaning Dataset
 
 ### Step6: Exploratory Data Analysis
