@@ -100,7 +100,11 @@ output ::
 assert_all_are_in_closed_range(happiness$HappinessScore, lower = 0, upper = 10)
 ```
 ซึ่ง output ที่ได้นั้นไม่เเสดง error อะไรออกมาเเสดงว่าทุกเเถวของ column "HappinessScore" อยู่ในช่วง 0-10
-
+#### 4.เปลี่ยนคำผิด
+```
+# change noth to north
+happiness$Hemisphere <- replace(happiness$Hemisphere, happiness$Hemisphere == "noth", "north")
+```
 
 
 ## Step5: Exploratory Data Analysis
@@ -112,7 +116,11 @@ happiness %>% group_by(Hemisphere) %>% select(HappinessScore) %>% summarise(avg 
 ```
 result:
 ```
-
+  Hemisphere   avg
+  <chr>      <dbl>
+1 both        5.90
+2 north       5.63
+3 south       4.97
 ```
 #### 2. อยากรู้ว่าประเทศไหนมีการกินแอลกอฮอล์ในแต่ละประเภทมากที่สุด
 
