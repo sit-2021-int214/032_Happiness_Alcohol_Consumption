@@ -21,5 +21,16 @@ Datasets from: https://www.kaggle.com/marcospessotto/happiness-and-alcohol-consu
 ## Step3: Explore the dataset from the original dataset
 
 ## Step4: Cleaning Dataset
+ทำการ check datatype ของ column ที่เป็นตัวเลขว่ามี datatype เป็น numeric จริงไหม
+
+```
+# check data type
+is.numeric(happiness$HappinessScore)
+is.numeric(happiness$HDI)
+is.numeric(happiness$GDP_PerCapita)
+is.numeric(happiness$Beer_PerCapita)
+is.numeric(happiness$Spirit_PerCapita)
+
+```
 
 ## Step5: Exploratory Data Analysis
