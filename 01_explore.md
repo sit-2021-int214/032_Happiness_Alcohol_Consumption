@@ -108,21 +108,11 @@ assert_all_are_in_closed_range(happiness$HappinessScore, lower = 0, upper = 10)
 
 code:
 ```
-north_mean <- mean(happiness$HappinessScore [alcohal$Hemisphere =="north"]) 
-north_mean
-south_mean <- mean(happiness$HappinessScore [alcohal$Hemisphere =="south"]) 
-south_mean
-both_mean <- mean(happiness$HappinessScore [alcohal$Hemisphere =="both"]) 
-both_mean
+happiness %>% group_by(Hemisphere) %>% select(HappinessScore) %>% summarise(avg = mean(HappinessScore))
 ```
 result:
 ```
-> north_mean
-[1] 5.632935
-> south_mean
-[1] 4.970619
-> both_mean
-[1] 5.9016
+
 ```
 #### 2. อยากรู้ว่าประเทศไหนมีการกินแอลกอฮอล์ในแต่ละประเภทมากที่สุด
 
