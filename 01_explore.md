@@ -17,7 +17,18 @@ Datasets from: https://www.kaggle.com/marcospessotto/happiness-and-alcohol-consu
 
 
 ## Step2: Download Library and dataset
-
+```
+# Library
+install.packages("readr")
+install.packages("assertive")
+install.packages("stringr")
+library(readr)    
+library(stringr)   
+library(assertive)  
+# Dataset
+happiness <- read.csv("/Users/ASUS/Downloads/HappinessAlcoholConsumption.csv")
+View(happiness)
+```
 ## Step3: Explore the dataset from the original dataset
 ใน dataset นี้ประกอบด้วยข้อมูลทั้งหมด 9 คอลัมน์คือ 
 1. Country 
