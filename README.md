@@ -32,7 +32,7 @@ E.g. กลุ่มของเราเลือกชุดข้อมูล
 ### Important Files in Repository
 
 - [code_eda.R](./code_eda.R) : Exploratory Data Analysis
-- [products_original.csv](./HappinessAlcoholConsumption.csv): Original Dataset
+- [Happiness_Alcohol_Comsumption.csv](./HappinessAlcoholConsumption.csv): Dataset
 - [products_clean.csv](./products_original.csv): Clean Dataset
 
 ### References
