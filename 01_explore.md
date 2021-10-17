@@ -116,7 +116,9 @@ assert_all_are_in_closed_range(happiness$HappinessScore, lower = 0, upper = 10)
 
 code:
 ```
-
+mean(happiness$HappinessScore [alcohal$Hemisphere =="north"]) 
+mean(happiness$HappinessScore [alcohal$Hemisphere =="south"]) 
+mean(happiness$HappinessScore [alcohal$Hemisphere =="both"]) 
 ```
 result:
 ```
