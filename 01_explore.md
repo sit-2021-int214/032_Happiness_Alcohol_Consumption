@@ -10,7 +10,7 @@ Datasets from: https://www.kaggle.com/marcospessotto/happiness-and-alcohol-consu
 
 ## Step1: Define a question
 
-1. อยากรู้ค่าเฉลี่ยของ Happy Score ของการดื่มแอลกอฮอล์ (เบียร์ เหล้า ไวน์) ของประเทศในเเต่ละซีกโลก
+1. อยากรู้ค่าเฉลี่ยของ Happy Score ของการดื่มแอลกอฮอล์ (เบียร์ เหล้า ไวน์) ในเเต่ละซีกโลก
 2. อยากรู้ว่าประเทศไหนมีการกินแอลกอฮอล์ในแต่ละประเภทมากที่สุด
 3. อยากรู้ค่าเฉลี่ย Happiness score ในเเต่ละ region เเล้วนํามาเทียบกัน
 4. อยากรู้ว่าค่า GDP และ HDI มีผลต่อการดื่มเเอลกอฮอล์มากน้อยเพียงใดในเเต่ละประเทศ
@@ -100,7 +100,7 @@ output ::
 assert_all_are_in_closed_range(happiness$HappinessScore, lower = 0, upper = 10)
 ```
 ซึ่ง output ที่ได้นั้นไม่เเสดง error อะไรออกมาเเสดงว่าทุกเเถวของ column "HappinessScore" อยู่ในช่วง 0-10
-#### 4.เปลี่ยนคำผิด
+#### 4.เปลี่ยนคำผิดด้วย stringr
 ```
 # change noth to north
 happiness$Hemisphere <- replace(happiness$Hemisphere, happiness$Hemisphere == "noth", "north")
@@ -108,7 +108,7 @@ happiness$Hemisphere <- replace(happiness$Hemisphere, happiness$Hemisphere == "n
 
 
 ## Step5: Exploratory Data Analysis
-#### 1. อยากรู้ค่าเฉลี่ยของ Happy Score ของการดื่มแอลกอฮอล์ (เบียร์ เหล้า ไวน์) ของประเทศในเเต่ละซีกโลก
+#### 1. อยากรู้ค่าเฉลี่ยของ Happiness Score ของการดื่มแอลกอฮอล์ (เบียร์ เหล้า ไวน์) ในเเต่ละซีกโลก
 
 code:
 ```
