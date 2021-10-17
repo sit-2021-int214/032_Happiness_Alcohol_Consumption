@@ -1,14 +1,14 @@
 # Happiness Alcohol Consumption
 Datasets from: https://www.kaggle.com/marcospessotto/happiness-and-alcohol-consumption
 
-## Steps
+### Steps
 1. Define a question
 2. Download Library and dataset
 3. Explore the dataset from the original dataset
 4. Cleaning Dataset
 5. Exploratory Data Analysis
 
-### Step1: Define a question
+## Step1: Define a question
 ```
 1.อยากรู้ค่าเฉลี่ยของ Happy Score ของการดื่มแอลกอฮอล์ (เบียร์ เหล้า ไวน์) ของประเทศในเเต่ละซีกโลก
 2.อยากรู้ว่าประเทศไหนมีการกินแอลกอฮอล์ในแต่ละประเภทมากที่สุด
@@ -16,10 +16,10 @@ Datasets from: https://www.kaggle.com/marcospessotto/happiness-and-alcohol-consu
 4.อยากรู้ว่าค่า GDP และ HDI มีผลต่อการดื่มเเอลกอฮอล์มากน้อยเพียงใดในเเต่ละประเทศ
 ```
 
-### Step2: Download Library and dataset
+## Step2: Download Library and dataset
 
-### Step3: Explore the dataset from the original dataset
+## Step3: Explore the dataset from the original dataset
 
-### Step4: Cleaning Dataset
+## Step4: Cleaning Dataset
 
-### Step5: Exploratory Data Analysis
+## Step5: Exploratory Data Analysis
