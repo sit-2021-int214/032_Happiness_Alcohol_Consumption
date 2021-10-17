@@ -2,8 +2,7 @@
 Datasets from: https://www.kaggle.com/marcospessotto/happiness-and-alcohol-consumption
 
 ### About's Happiness Alcohol Consumption Datasets
-
-This dataset is about's sample uniqlo product that sell in 2021. It includes productID, name of products, type of products, price of products, and number of sold.
+dataset นี้รายงานข้อมูลของคะแนนความสุข IDH และ GDP เทียบกับการบริโภคเครื่องดื่มแอลกอฮอล์ต่อหัว (ตามประเทศและประเภทเครื่องดื่ม) ในปี 2016
 
 ## Overview
 
