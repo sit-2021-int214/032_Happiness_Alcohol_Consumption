@@ -62,7 +62,6 @@ is.numeric(happiness$HDI)
 is.numeric(happiness$GDP_PerCapita)
 is.numeric(happiness$Beer_PerCapita)
 is.numeric(happiness$Spirit_PerCapita)
-
 ```
 output ::
 เป็น TRUE หมดเเสดงว่าเป็น numeric ทุก column
@@ -78,13 +77,11 @@ output ::
 [1] TRUE
 > is.numeric(happiness$Spirit_PerCapita)
 [1] TRUE
-
 ```
 #### 2.Check column "Country" ว่ามีชื่อประเทศที่ซ้ำกันไหม เพื่อไม่ให้มีเเถวข้อมูลของประเทศซ้ำกัน
 ```
 # check duplicate
 duplicated(happiness$Country)
-
 ```
 output ::
 เป็น FLASE หมดเเสดงว่าไม่มีเเถวที่ประเทศซ้ำกัน
@@ -96,17 +93,14 @@ output ::
  [70] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
  [93] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
 [116] FALSE FALSE FALSE FALSE FALSE FALSE FALSE
-
 ```
-
 #### 3.Check range ของ "HappinessScore" ว่าอยู่ระหว่าง 0-10 รึป่าว
 ```
-
 # check range of happiness score
 assert_all_are_in_closed_range(happiness$HappinessScore, lower = 0, upper = 10)
-
 ```
 ซึ่ง output ที่ได้นั้นไม่เเสดง error อะไรออกมาเเสดงว่าทุกเเถวของ column "HappinessScore" อยู่ในช่วง 0-10
+
 
 ## Step5: Exploratory Data Analysis
 ### 1. อยากรู้ค่าเฉลี่ยของ Happy Score ของการดื่มแอลกอฮอล์ (เบียร์ เหล้า ไวน์) ของประเทศในเเต่ละซีกโลก
