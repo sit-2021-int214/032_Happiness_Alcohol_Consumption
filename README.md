@@ -25,13 +25,13 @@ E.g. กลุ่มของเราเลือกชุดข้อมูล
 ## Table of Contents
 
 1. [Exploratory Data Analysis](./01_explore.md)
-2. [Data Visualization]() ---> อันนี้เป็นงานของ Final Assignment นะครับพี่แค่แปะหัวข้อตัวอย่างไว้
+2. [Data Visualization]()
 
 ## Resources
 
 ### Important Files in Repository
 
-- [code_eda.R](./code_eda.R) : Exploratory Data Analysis
+- [01_explore](./code_eda.R) : Exploratory Data Analysis
 - [Happiness_Alcohol_Comsumption.csv](./HappinessAlcoholConsumption.csv): Dataset
 - [products_clean.csv](./products_original.csv): Clean Dataset
 
