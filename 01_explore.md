@@ -142,7 +142,17 @@ happiness %>% group_by(Region) %>% summarise(avg = mean(HappinessScore))
 ```
 result:
 ```
-
+Region                            avg
+  <chr>                           <dbl>
+1 Australia and New Zealand        7.32
+2 Central and Eastern Europe       5.38
+3 Eastern Asia                     5.48
+4 Latin America and Caribbean      6.06
+5 Middle East and Northern Africa  5.44
+6 North America                    7.25
+7 Southeastern Asia                5.49
+8 Sub-Saharan Africa               4.15
+9 Western Europe                   6.73
 ```
 #### 4. อยากรู้ว่าค่า GDP และ HDI มีผลต่อการดื่มเเอลกอฮอล์มากน้อยเพียงใดในเเต่ละประเทศ
 
