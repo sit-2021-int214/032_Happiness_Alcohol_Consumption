@@ -24,11 +24,13 @@ Datasets from: https://www.kaggle.com/marcospessotto/happiness-and-alcohol-consu
      - ประกอบด้วยรายชื่อประเทศทั้งหมด 122 ประเทศที่เเตกต่างกัน
      - ข้อมูลเป็นประเภท character
 2. Region	
-     - 
+     - ข้อมูลเป็นประเภท character
 3. Hemisphere 
      - เเบ่งออกเป็นสามอย่างคือ north south เเละ both
+     - ข้อมูลเป็นประเภท character
 4. HappinessScore 
      - เกณฑ์วัดระดับความสุข ตั้งเเต่ 0-10
+     - ข้อมูลเป็นประเภท double
 5. HDI	
      - 
 6. GDP_PerCapita	
