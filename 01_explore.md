@@ -127,9 +127,34 @@ result:
 code:
 ```
 
+# max of beer
+max_beer <- max(happiness$Beer_PerCapita)
+happiness %>% dplyr::select(Beer_PerCapita, Country) %>% filter(Beer_PerCapita == max_beer)
+
+# max of spirit
+max_spirit <- max(happiness$Spirit_PerCapita)
+happiness %>% dplyr::select(Spirit_PerCapita, Country) %>% filter(Spirit_PerCapita == max_spirit)
+max_spirit
+
+# max of wine
+max_wine <- max(happiness$Wine_PerCapita)
+happiness %>% dplyr::select(Wine_PerCapita, Country) %>% filter(Wine_PerCapita == max_wine) 
+
 ```
 result:
 ```
+> # max of beer
+> happiness %>% dplyr::select(Beer_PerCapita, Country) %>% filter(Beer_PerCapita == max_beer)
+  Beer_PerCapita Country
+1            376 Namibia
+> # max of spirit
+> happiness %>% dplyr::select(Spirit_PerCapita, Country) %>% filter(Spirit_PerCapita == max_spirit)
+  Spirit_PerCapita Country
+1              373 Belarus
+> # max of wine
+> happiness %>% dplyr::select(Wine_PerCapita, Country) %>% filter(Wine_PerCapita == max_wine) 
+  Wine_PerCapita Country
+1            370  France
 
 ```
 #### 3. อยากรู้ค่าเฉลี่ย Happiness score ในเเต่ละ region เเล้วนํามาเทียบกัน
