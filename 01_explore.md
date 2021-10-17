@@ -59,11 +59,11 @@ View(happiness)
 
 ```
 # check data type
-is.numeric(happiness$HappinessScore)
-is.numeric(happiness$HDI)
-is.numeric(happiness$GDP_PerCapita)
-is.numeric(happiness$Beer_PerCapita)
-is.numeric(happiness$Spirit_PerCapita)
+is.numeric(happiness$HappinessScore) //TRUE
+is.numeric(happiness$HDI) //TRUE
+is.numeric(happiness$GDP_PerCapita) //TRUE
+is.numeric(happiness$Beer_PerCapita) //TRUE
+is.numeric(happiness$Spirit_PerCapita) //TRUE
 
 ```
 
