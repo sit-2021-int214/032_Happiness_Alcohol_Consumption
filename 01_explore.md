@@ -65,7 +65,8 @@ is.numeric(happiness$Spirit_PerCapita)
 
 ```
 
-ซึ่ง output ที่ได้นั้นเป็น TRUE หมดเลย เเสดงว่าเป็น numeric ทุก column
+output ::
+เป็น TRUE หมดเเสดงว่าเป็น numeric ทุก column
 ```
 > # check data type
 > is.numeric(happiness$HappinessScore)
@@ -88,7 +89,8 @@ duplicated(happiness$Country)
 
 ```
 
-ซึ่ง output ที่ได้นั้นเป็น FLASE หมดเลย เเสดงว่าไม่มีเเถวที่ประเทศซ้ำกัน
+output ::
+เป็น FLASE หมดเลยเเสดงว่าไม่มีเเถวที่ประเทศซ้ำกัน
 ```
 > duplicated(happiness$Country)
   [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
