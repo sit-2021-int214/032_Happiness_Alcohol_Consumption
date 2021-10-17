@@ -30,7 +30,7 @@ E.g. กลุ่มของเราเลือกชุดข้อมูล
 ### Important Files in Repository
 
 - [code_eda.R](./code_eda.R) : Exploratory Data Analysis
-- [products_original.csv](./products_original.csv): Original Dataset
+- [products_original.csv](./HappinessAlcoholConsumption.csv): Original Dataset
 - [products_clean.csv](./products_original.csv): Clean Dataset
 
 ### References
