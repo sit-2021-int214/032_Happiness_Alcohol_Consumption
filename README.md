@@ -2,7 +2,7 @@
 Datasets from: https://www.kaggle.com/marcospessotto/happiness-and-alcohol-consumption
 
 ### About's Happiness Alcohol Consumption Datasets
-dataset นี้รายงานข้อมูลของคะแนนความสุข IDH และ GDP เทียบกับการบริโภคเครื่องดื่มแอลกอฮอล์ต่อหัว (ตามประเทศและประเภทเครื่องดื่ม) ในปี 2016
+dataset นี้รายงานข้อมูลของคะแนนความสุข HDI และ GDP เทียบกับการบริโภคเครื่องดื่มแอลกอฮอล์ต่อหัว (ตามประเทศและประเภทเครื่องดื่ม) ในปี 2016
 
 ## Overview
 
