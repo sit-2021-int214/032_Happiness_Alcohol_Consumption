@@ -27,7 +27,7 @@ library(readr)
 library(stringr)   
 library(assertive)  
 # Dataset
-happiness <- read.csv("/Users/ASUS/Downloads/HappinessAlcoholConsumption.csv")
+happiness <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/032_Happiness_Alcohol_Consumption/main/HappinessAlcoholConsumption.csv")
 View(happiness)
 ```
 ## Step3: Explore the dataset from the original dataset
