@@ -17,31 +17,28 @@ Datasets from: https://www.kaggle.com/marcospessotto/happiness-and-alcohol-consu
 
 
 ## Step2: Download Library and dataset
-```
-# Library
-install.packages("readr")
-install.packages("assertive")
-install.packages("stringr")
-library(readr)    
-library(stringr)   
-library(assertive)  
-
-# Dataset
-happiness <- read.csv("/Users/ASUS/Downloads/HappinessAlcoholConsumption.csv")
-View(happiness)
-```
 
 ## Step3: Explore the dataset from the original dataset
 ใน dataset นี้ประกอบด้วยข้อมูลทั้งหมด 9 คอลัมน์คือ 
-1. Country ประกอบด้วยรายชื่อประเทศทั้งหมด 122 ประเทศที่เเตกต่างกัน
+1. Country 
+     - ประกอบด้วยรายชื่อประเทศทั้งหมด 122 ประเทศที่เเตกต่างกัน
+     - ข้อมูลเป็นประเภท character
 2. Region	
-3. Hemisphere เเบ่งออกเป็นสามอย่างคือ north south เเละ both
-4. HappinessScore เกณฑ์วัดระดับความสุข ตั้งเเต่ 0-10
+     - 
+3. Hemisphere 
+     - เเบ่งออกเป็นสามอย่างคือ north south เเละ both
+4. HappinessScore 
+     - เกณฑ์วัดระดับความสุข ตั้งเเต่ 0-10
 5. HDI	
+     - 
 6. GDP_PerCapita	
+     -
 7. Beer_PerCapita	
+     -
 8. Spirit_PerCapita	
+     -
 9. Wine_PerCapita
+     -
 
 ## Step4: Cleaning Dataset
 ทำการ check datatype ของ column ที่เป็นตัวเลขว่ามี datatype เป็น numeric จริงไหม
