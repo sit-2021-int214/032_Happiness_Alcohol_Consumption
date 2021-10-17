@@ -82,7 +82,7 @@ output ::
 
 ```
 
-2.Check column "Country" ว่ามีชื่อประเทศที่ซ้ำกันไหม เพื่อไม่ให้มีเเถวข้อมูลของประเทศซ้ำกัน
+#### 2.Check column "Country" ว่ามีชื่อประเทศที่ซ้ำกันไหม เพื่อไม่ให้มีเเถวข้อมูลของประเทศซ้ำกัน
 ```
 # check duplicate
 duplicated(happiness$Country)
@@ -102,7 +102,7 @@ output ::
 
 ```
 
-3.Check range ของ "HappinessScore" ว่าอยู่ระหว่าง 0-10 รึป่าว
+#### 3.Check range ของ "HappinessScore" ว่าอยู่ระหว่าง 0-10 รึป่าว
 ```
 
 # check range of happiness score
