@@ -69,7 +69,7 @@ is.numeric(happiness$Spirit_PerCapita) //TRUE
 
 ```
 # check duplicate
-duplicated(happiness$Country)
+duplicated(happiness$Country) //FALSE
 ```
 
 ## Step5: Exploratory Data Analysis
