@@ -55,21 +55,49 @@ View(happiness)
 
 ## Step4: Cleaning Dataset
 ทำการ check datatype ของ column ที่เป็นตัวเลขว่ามี datatype เป็น numeric จริงไหม
-ซึ่ง output ที่ได้นั้นเป็น TRUE หมดเลย เเสดงว่าเป็น numeric ทุก column
-
 ```
 # check data type
-is.numeric(happiness$HappinessScore) //TRUE
-is.numeric(happiness$HDI) //TRUE
-is.numeric(happiness$GDP_PerCapita) //TRUE
-is.numeric(happiness$Beer_PerCapita) //TRUE
-is.numeric(happiness$Spirit_PerCapita) //TRUE
+is.numeric(happiness$HappinessScore)
+is.numeric(happiness$HDI)
+is.numeric(happiness$GDP_PerCapita)
+is.numeric(happiness$Beer_PerCapita)
+is.numeric(happiness$Spirit_PerCapita)
 
 ```
 
+ซึ่ง output ที่ได้นั้นเป็น TRUE หมดเลย เเสดงว่าเป็น numeric ทุก column
+```
+> # check data type
+> is.numeric(happiness$HappinessScore)
+[1] TRUE
+> is.numeric(happiness$HDI)
+[1] TRUE
+> is.numeric(happiness$GDP_PerCapita)
+[1] TRUE
+> is.numeric(happiness$Beer_PerCapita)
+[1] TRUE
+> is.numeric(happiness$Spirit_PerCapita)
+[1] TRUE
+
+```
+
+ทำการ check column "Country" ว่ามีชื่อประเทศที่ซ้ำกันไหม เพื่อไม่ให้มีเเถวข้อมูลของประเทศซ้ำกัน
 ```
 # check duplicate
-duplicated(happiness$Country) //FALSE
+duplicated(happiness$Country)
+
+```
+
+ซึ่ง output ที่ได้นั้นเป็น FLASE หมดเลย เเสดงว่าไม่มีเเถวที่ประเทศซ้ำกัน
+```
+> duplicated(happiness$Country)
+  [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+ [24] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+ [47] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+ [70] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+ [93] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+[116] FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+
 ```
 
 ## Step5: Exploratory Data Analysis
