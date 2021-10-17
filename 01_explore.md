@@ -144,13 +144,24 @@ Region                            avg
 8 Sub-Saharan Africa               4.15
 9 Western Europe                   6.73
 ```
-#### 4. อยากรู้ว่าค่า GDP และ HDI มีผลต่อการดื่มเเอลกอฮอล์มากน้อยเพียงใดในเเต่ละประเทศ
+#### 4. หาค่าเฉลี่ยการกินเเอลกอฮอล์เเต่ละประเภทในเเต่ละภูมิภาค เเละเปรียบเทียบว่าในภูมิภาคนั้นๆค่าเฉลี่ยการกินเเอลกอฮอล์ประเทศใดมีมากที่สุด
 
 code:
 ```
-
+happiness %>% group_by(Region) %>% summarise(avg_beer = mean(Beer_PerCapita),avg_spirit = mean(Spirit_PerCapita),avg_wine = mean(Wine_PerCapita))
 ```
 result:
 ```
-
+# A tibble: 9 x 4
+  Region                          avg_beer avg_spirit avg_wine
+  <chr>                              <dbl>      <dbl>    <dbl>
+1 Australia and New Zealand          232         75.5    194. 
+2 Central and Eastern Europe         170.       172.      83.8
+3 Eastern Asia                        93.2      150.      10.2
+4 Latin America and Caribbean        159.       110.      35.8
+5 Middle East and Northern Africa     24.8       41.4     10.4
+6 North America                      244.       140       92  
+7 Southeastern Asia                   79.6      105.       3  
+8 Sub-Saharan Africa                  78.5       20.8     12.2
+9 Western Europe                     216.       102.     198. 
 ```
