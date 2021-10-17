@@ -8,3 +8,5 @@ Datasets from: https://www.kaggle.com/marcospessotto/happiness-and-alcohol-consu
 4. Explore the dataset from the original dataset
 5. Cleaning Dataset
 6. Exploratory Data Analysis
+
+### Step1: Define a question
