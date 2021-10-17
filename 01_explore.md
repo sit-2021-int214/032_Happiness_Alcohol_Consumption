@@ -54,7 +54,7 @@ View(happiness)
      - ข้อมูลเป็นประเภท integer
 
 ## Step4: Cleaning Dataset
-ทำการ check datatype ของ column ที่เป็นตัวเลขว่ามี datatype เป็น numeric จริงไหม
+1.Check datatype ของ column ที่เป็นตัวเลขว่ามี datatype เป็น numeric จริงไหม
 ```
 # check data type
 is.numeric(happiness$HappinessScore)
@@ -82,7 +82,7 @@ output ::
 
 ```
 
-ทำการ check column "Country" ว่ามีชื่อประเทศที่ซ้ำกันไหม เพื่อไม่ให้มีเเถวข้อมูลของประเทศซ้ำกัน
+2.Check column "Country" ว่ามีชื่อประเทศที่ซ้ำกันไหม เพื่อไม่ให้มีเเถวข้อมูลของประเทศซ้ำกัน
 ```
 # check duplicate
 duplicated(happiness$Country)
@@ -102,7 +102,7 @@ output ::
 
 ```
 
-Check range ของ "HappinessScore" ว่าอยู่ระหว่าง 0-10 รึป่าว
+3.Check range ของ "HappinessScore" ว่าอยู่ระหว่าง 0-10 รึป่าว
 ```
 
 # check range of happiness score
