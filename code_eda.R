@@ -77,6 +77,10 @@ sum_drink_per_region <- sum_drink_per_region %>% mutate(percent_wine = (sum_wine
 percent_drink_per_region <- sum_drink_per_region %>% select(-sum_beer, -sum_spirit, -sum_wine)
 percent_drink_per_region
 
+#---7---
+HDI <- happiness %>% filter(HDI > mean(HDI, na.rm = TRUE)) %>% select(Country,Region, HDI)
+HDI %>% group_by(Region) %>% count
+
 
 
 
