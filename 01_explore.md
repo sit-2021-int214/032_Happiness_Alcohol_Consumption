@@ -41,7 +41,7 @@ View(happiness)
      - ประกอบด้วยรายชื่อ region ทั้งหมด 9 region
      - ข้อมูลเป็นประเภท character
 3. Hemisphere 
-     - เเบ่งออกเป็นสามอย่างคือ north south เเละ both
+     - ซีกโลก เเบ่งออกเป็นสามอย่างคือ north south เเละ both
      - ข้อมูลเป็นประเภท character
 4. HappinessScore 
      - เกณฑ์วัดระดับความสุข ตั้งเเต่ 0-10
