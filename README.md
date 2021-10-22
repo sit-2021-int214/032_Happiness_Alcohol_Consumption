@@ -35,7 +35,7 @@ dataset นี้รายงานข้อมูลของคะแนนค
 
 ### References
 
-// Link
+https://datatofish.com/export-dataframe-to-csv-in-r/
 
 ## About Us
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
