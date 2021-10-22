@@ -13,8 +13,9 @@ Datasets from: https://www.kaggle.com/marcospessotto/happiness-and-alcohol-consu
 1. หาค่าเฉลี่ยของ Happy Score ของการดื่มแอลกอฮอล์ (เบียร์ เหล้า ไวน์) ในเเต่ละซีกโลก
 2. หาว่าประเทศไหนมีการกินแอลกอฮอล์ในแต่ละประเภทมากที่สุด
 3. หาค่าเฉลี่ย Happiness score ในเเต่ละ region เเล้วนํามาเทียบกัน
-4. หาค่าเฉลี่ยการกินเเอลกอฮอล์เเต่ละประเภทในเเต่ละภูมิภาค 
+4. หาค่าเฉลี่ยการดื่มเเอลกอฮอล์เเต่ละประเภทในเเต่ละภูมิภาค 
 5. หาค่าเฉลี่ยดัชนีผลิตภัณฑ์มวลรวมภายใน (GDP) ของเเต่ละภูมิภาค เเละนำมาเปรียบเทียบหาภูมิภาคที่มี GDP เฉลี่ยสูงสุดเเละต่ำสุด
+6. หาเปอร์เซ็นการดื่มเเอลกอฮอล์เเต่ละประเภทในเเต่ละภูมิภาค
 
 
 ## Step2: Download Library and dataset
@@ -192,7 +193,7 @@ Region                            avg
 8 Sub-Saharan Africa               4.15
 9 Western Europe                   6.73
 ```
-#### 4. หาค่าเฉลี่ยการกินเเอลกอฮอล์เเต่ละประเภทในเเต่ละภูมิภาค 
+#### 4. หาค่าเฉลี่ยการดื่มเเอลกอฮอล์เเต่ละประเภทในเเต่ละภูมิภาค 
 
 code:
 ```
@@ -223,7 +224,6 @@ result:
  - GDP เฉลี่ยสูงสุดเท่ากับ 306.0 (Sub-Saharan Africa)
  - GDP เฉลี่ยสูงสุดเท่ากับ 8.55 (Central and Eastern Europe )
 ```
-> mean_gdp_each_regoin %>% summarise(max = max(avg), min = min(avg))
 # A tibble: 1 x 2
   Region                             avg
   <chr>                            <dbl>
@@ -236,5 +236,40 @@ result:
 7 Middle East and Northern Africa  17.5 
 8 Southeastern Asia                13.5 
 9 Central and Eastern Europe        8.55
+
+```
+
+#### 6. หาเปอร์เซ็นการดื่มเเอลกอฮอล์เเต่ละประเภทในเเต่ละภูมิภาค
+code:
+```
+sum_all_beer <- sum(happiness$Beer_PerCapita)
+sum_all_spirit <- sum(happiness$Spirit_PerCapita)
+sum_all_wine <- sum(happiness$Wine_PerCapita)
+
+sum_drink_per_region <- happiness %>% group_by(Region) %>% summarise(sum_beer = sum(Beer_PerCapita), sum_spirit = sum(Spirit_PerCapita), sum_wine = sum(Wine_PerCapita))
+
+sum_drink_per_region <- sum_drink_per_region %>% mutate(percent_beer = (sum_beer/sum_all_beer) * 100)
+sum_drink_per_region <- sum_drink_per_region %>% mutate(percent_spirit = (sum_spirit/sum_all_spirit) * 100)
+sum_drink_per_region <- sum_drink_per_region %>% mutate(percent_wine = (sum_wine/sum_all_wine) * 100)
+
+percent_drink_per_region <- sum_drink_per_region %>% select(-sum_beer, -sum_spirit, -sum_wine)
+percent_drink_per_region
+
+```
+result:
+
+```
+# A tibble: 9 x 4
+  Region                          percent_beer percent_spirit percent_wine
+  <chr>                                  <dbl>          <dbl>        <dbl>
+1 Australia and New Zealand               2.76           1.28        4.76 
+2 Central and Eastern Europe             27.4           39.4        27.9  
+3 Eastern Asia                            2.22           5.08        0.505
+4 Latin America and Caribbean            21.9           21.5        10.1  
+5 Middle East and Northern Africa         1.63           3.86        1.40 
+6 North America                           2.91           2.38        2.26 
+7 Southeastern Asia                       2.37           4.44        0.185
+8 Sub-Saharan Africa                     13.1            4.93        4.21 
+9 Western Europe                         25.8           17.2        48.7
 
 ```
