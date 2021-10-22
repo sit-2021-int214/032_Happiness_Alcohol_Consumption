@@ -118,9 +118,9 @@ code:
 happiness %>% group_by(Hemisphere) %>% select(HappinessScore) %>% summarise(avg = mean(HappinessScore))
 ```
 result:
-ค่าเฉลี่ย Happiness Score ในซีกโลกเหนือ (north) = 5.63
-ค่าเฉลี่ย Happiness Score ในซีกโลกใต้ (south) = 4.97
-ค่าเฉลี่ย Happiness Score ของประเทศที่อยู่ในทั้งสองซีกโลก (both) = 5.90
+ - ค่าเฉลี่ย Happiness Score ในซีกโลกเหนือ (north) = 5.63
+ - ค่าเฉลี่ย Happiness Score ในซีกโลกใต้ (south) = 4.97
+ - ค่าเฉลี่ย Happiness Score ของประเทศที่อยู่ในทั้งสองซีกโลก (both) = 5.90
 ```
   Hemisphere   avg
   <chr>      <dbl>
@@ -148,9 +148,9 @@ happiness %>% dplyr::select(Wine_PerCapita, Country) %>% filter(Wine_PerCapita =
 
 ```
 result:
-ประเทศที่กินแอลกอฮอล์ประเภท beer มากที่สุดคือ "Namibia"
-ประเทศที่กินแอลกอฮอล์ประเภท spirit มากที่สุดคือ "Belarus"
-ประเทศที่กินแอลกอฮอล์ประเภท wine มากที่สุดคือ "France"
+ - ประเทศที่กินแอลกอฮอล์ประเภท beer มากที่สุดคือ "Namibia"
+ - ประเทศที่กินแอลกอฮอล์ประเภท spirit มากที่สุดคือ "Belarus"
+ - ประเทศที่กินแอลกอฮอล์ประเภท wine มากที่สุดคือ "France"
 ```
 > # max of beer
 > happiness %>% dplyr::select(Beer_PerCapita, Country) %>% filter(Beer_PerCapita == max_beer)
