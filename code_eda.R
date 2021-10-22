@@ -63,7 +63,7 @@ happiness %>% group_by(Region) %>% summarise(avg_beer = mean(Beer_PerCapita),avg
 #----5----
 happiness %>% group_by(Region) %>% select(GDP_PerCapita) %>% summarise(avg = mean(GDP_PerCapita)) %>% arrange(desc(avg))
 
-#---6---
+#----6----
 sum_all_beer <- sum(happiness$Beer_PerCapita)
 sum_all_spirit <- sum(happiness$Spirit_PerCapita)
 sum_all_wine <- sum(happiness$Wine_PerCapita)
@@ -77,7 +77,7 @@ sum_drink_per_region <- sum_drink_per_region %>% mutate(percent_wine = (sum_wine
 percent_drink_per_region <- sum_drink_per_region %>% select(-sum_beer, -sum_spirit, -sum_wine)
 percent_drink_per_region
 
-#---7---
+#----7----
 HDI <- happiness %>% filter(HDI > mean(HDI, na.rm = TRUE)) %>% select(Country,Region, HDI)
 HDI %>% group_by(Region) %>% count
 
