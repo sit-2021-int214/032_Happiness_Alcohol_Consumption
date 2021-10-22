@@ -212,7 +212,6 @@ result:
 code:
 ```
 happiness %>% group_by(Region) %>% select(GDP_PerCapita) %>% summarise(avg = mean(GDP_PerCapita)) %>% arrange(desc(avg))
-
 ```
 result:
 GDP เฉลี่ยสูงสุดเท่ากับ 306.0 (Sub-Saharan Africa)
