@@ -16,6 +16,7 @@ Datasets from: https://www.kaggle.com/marcospessotto/happiness-and-alcohol-consu
 4. หาค่าเฉลี่ยการดื่มเเอลกอฮอล์เเต่ละประเภทในเเต่ละภูมิภาค 
 5. หาค่าเฉลี่ยดัชนีผลิตภัณฑ์มวลรวมภายใน (GDP) ของเเต่ละภูมิภาค เเละนำมาเปรียบเทียบหาภูมิภาคที่มี GDP เฉลี่ยสูงสุดเเละต่ำสุด
 6. หาเปอร์เซ็นการดื่มเเอลกอฮอล์เเต่ละประเภทในเเต่ละภูมิภาค
+7. หาประเทศที่มีค่า HDI มากกว่าค่าเฉลี่ย HDI ของทุกประเทศ
 
 
 ## Step2: Download Library and dataset
@@ -180,6 +181,9 @@ code:
 happiness %>% group_by(Region) %>% summarise(avg = mean(HappinessScore))
 ```
 result:
+จากการสำรวจข้อมูลของค่าเฉลี่ย Happiness score ในเเต่ละภูมิภาค จะเห็นได้ว่า
+- ภูมิภาค Australia and New Zealand มีค่าเฉลี่ย Happiness score มากที่สุด อยู่ที่ 7.32
+- ภูมิภาค Sub-Saharan Africa  มีค่าเฉลี่ย Happiness score น้อยที่สุด อยู่ที่ 4.15
 ```
 Region                            avg
   <chr>                           <dbl>
@@ -200,6 +204,10 @@ code:
 happiness %>% group_by(Region) %>% summarise(avg_beer = mean(Beer_PerCapita),avg_spirit = mean(Spirit_PerCapita),avg_wine = mean(Wine_PerCapita))
 ```
 result:
+- จากการสำรวจนี้ จะเห็นได้ว่า
+     - ค่าเฉลี่ยของปริมาณการดื่ม beer ที่มากที่สุดจะอยู่ในภูมิภาค North America เเละน้อยที่สุดเป็นภูมิภาค Middle East and Northern Africa
+     - ค่าเฉลี่ยของปริมาณการดื่ม spirit ที่มากที่สุดจะอยู่ในภูมิภาค Central and Eastern Europe เเละน้อยที่สุดเป็นภูมิภาค Sub-Saharan Africa
+     - ค่าเฉลี่ยของปริมาณการดื่ม wine ที่มากที่สุดจะอยู่ในภูมิภาค Western Europe เเละน้อยที่สุดเป็นภูมิภาค Southeastern Asia 
 ```
 # A tibble: 9 x 4
   Region                          avg_beer avg_spirit avg_wine
@@ -240,6 +248,7 @@ result:
 ```
 
 #### 6. หาเปอร์เซ็นการดื่มเเอลกอฮอล์เเต่ละประเภทในเเต่ละภูมิภาค
+
 code:
 ```
 sum_all_beer <- sum(happiness$Beer_PerCapita)
@@ -257,7 +266,10 @@ percent_drink_per_region
 
 ```
 result:
-
+- ตารางนี้เเสดงเปอร์เซ็นการดื่มเเอลกอฮอล์เเต่ละประเภทในเเต่ละภูมิภาค จะเห็นได้ว่า
+     - ปริมาณการดื่ม beer ที่มากที่สุดจะอยู่ในภูมิภาค Central and Eastern Europe เเละน้อยที่สุดเป็นภูมิภาค Middle East and Northern Africa
+     - ปริมาณการดื่ม spirit ที่มากที่สุดจะอยู่ในภูมิภาค Central and Eastern Europe เเละน้อยที่สุดเป็นภูมิภาค Australia and New Zealand
+     - ปริมาณการดื่ม wine ที่มากที่สุดจะอยู่ในภูมิภาค Western Europe เเละน้อยที่สุดเป็นภูมิภาค Southeastern Asia 
 ```
 # A tibble: 9 x 4
   Region                          percent_beer percent_spirit percent_wine
@@ -273,3 +285,53 @@ result:
 9 Western Europe                         25.8           17.2        48.7
 
 ```
+
+#### 7. หาประเทศที่มีค่า HDI มากกว่าค่าเฉลี่ย HDI ของทุกประเทศ
+
+code:
+```
+HDI <- happiness %>% filter(HDI > mean(HDI, na.rm = TRUE)) %>% select(Country,Region, HDI)
+HDI
+
+HDI %>% group_by(Region) %>% count
+```
+result:
+- แสดงประเทศที่มีค่า HDI มากกว่าค่าเฉลี่ย HDI ของทุกประเทศ
+
+```
+                  Country                          Region HDI
+1                 Denmark                  Western Europe 928
+2             Switzerland                  Western Europe 943
+3                 Iceland                  Western Europe 933
+4                  Norway                  Western Europe 951
+5                 Finland                  Western Europe 918
+6                  Canada                   North America 922
+7             Netherlands                  Western Europe 928
+8             New Zealand       Australia and New Zealand 915
+9               Australia       Australia and New Zealand 938
+10                 Sweden                  Western Europe 932
+.
+.
+.
+
+```
+
+จากข้อมูลนี้เมื่อนำไปนับจำนวนประเทศที่มีค่า HDI มากกว่าค่าเฉลี่ย HDI ของทุกประเทศของเเต่ละภูมิภาค จะได้ดังนี้
+
+```
+# A tibble: 9 x 2
+# Groups:   Region [9]
+  Region                              n
+  <chr>                           <int>
+1 Australia and New Zealand           2
+2 Central and Eastern Europe         23
+3 Eastern Asia                        4
+4 Latin America and Caribbean        12
+5 Middle East and Northern Africa     6
+6 North America                       2
+7 Southeastern Asia                   2
+8 Sub-Saharan Africa                  1
+9 Western Europe                     20
+
+```
+สรุปได้ว่าภูมิภาค Central and Eastern Europe จะมีจำนวนประเทศที่มีค่า HDI มากกว่าค่าเฉลี่ยมากที่สุด เเละภูมิภาค Sub-Saharan Africa มีจำนวนประเทศที่มีค่า HDI มากกว่าค่าเฉลี่ยน้อยที่สุด
