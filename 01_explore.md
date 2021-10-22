@@ -118,6 +118,9 @@ code:
 happiness %>% group_by(Hemisphere) %>% select(HappinessScore) %>% summarise(avg = mean(HappinessScore))
 ```
 result:
+ค่าเฉลี่ย Happiness Score ในซีกโลกเหนือ (north) = 5.63
+ค่าเฉลี่ย Happiness Score ในซีกโลกใต้ (south) = 4.97
+ค่าเฉลี่ย Happiness Score ของประเทศที่อยู่ในทั้งสองซีกโลก (both) = 5.90
 ```
   Hemisphere   avg
   <chr>      <dbl>
@@ -145,6 +148,9 @@ happiness %>% dplyr::select(Wine_PerCapita, Country) %>% filter(Wine_PerCapita =
 
 ```
 result:
+ประเทศที่กินแอลกอฮอล์ประเภท beer มากที่สุดคือ "Namibia"
+ประเทศที่กินแอลกอฮอล์ประเภท spirit มากที่สุดคือ "Belarus"
+ประเทศที่กินแอลกอฮอล์ประเภท wine มากที่สุดคือ "France"
 ```
 > # max of beer
 > happiness %>% dplyr::select(Beer_PerCapita, Country) %>% filter(Beer_PerCapita == max_beer)
@@ -205,16 +211,25 @@ result:
 #### 5. อยากรู้ดัชนีผลิตภัณฑ์มวลรวมภายในเฉลี่ย (GDP) สูงที่สุดเเละต่ำสุดของเเต่ละภูมิภาค
 code:
 ```
-mean_gdp_each_regoin <- happiness %>% group_by(Region) %>% select(GDP_PerCapita) %>% summarise(avg = mean(GDP_PerCapita))
-mean_gdp_each_regoin %>% summarise(max = max(avg), min = min(avg))
+happiness %>% group_by(Region) %>% select(GDP_PerCapita) %>% summarise(avg = mean(GDP_PerCapita)) %>% arrange(desc(avg))
 
 ```
 result:
+GDP เฉลี่ยสูงสุดเท่ากับ 306.0 (Sub-Saharan Africa)
+GDP เฉลี่ยสูงสุดเท่ากับ 8.55 (Central and Eastern Europe )
 ```
 > mean_gdp_each_regoin %>% summarise(max = max(avg), min = min(avg))
 # A tibble: 1 x 2
-    max   min
-  <dbl> <dbl>
-1  306.  8.55
+  Region                             avg
+  <chr>                            <dbl>
+1 Sub-Saharan Africa              306.  
+2 North America                    50.0 
+3 Western Europe                   46.0 
+4 Australia and New Zealand        45.1 
+5 Latin America and Caribbean      39.7 
+6 Eastern Asia                     19.5 
+7 Middle East and Northern Africa  17.5 
+8 Southeastern Asia                13.5 
+9 Central and Eastern Europe        8.55
 
 ```
