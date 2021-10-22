@@ -61,7 +61,7 @@ happiness %>% group_by(Region) %>% summarise(avg = mean(HappinessScore))
 happiness %>% group_by(Region) %>% summarise(avg_beer = mean(Beer_PerCapita),avg_spirit = mean(Spirit_PerCapita),avg_wine = mean(Wine_PerCapita))
 
 #----5----
-mean_gdp_each_regoin <- happiness %>% group_by(Region) %>% select(GDP_PerCapita) %>% summarise(avg = mean(GDP_PerCapita))
-mean_gdp_each_regoin %>% summarise(max = max(avg), min = min(avg))
+happiness %>% group_by(Region) %>% select(GDP_PerCapita) %>% summarise(avg = mean(GDP_PerCapita)) %>% arrange(desc(avg))
+
 
 
