@@ -38,6 +38,7 @@ View(happiness)
      - ประกอบด้วยรายชื่อประเทศทั้งหมด 122 ประเทศที่เเตกต่างกัน
      - ข้อมูลเป็นประเภท character
 2. Region	
+     - ประกอบด้วยรายชื่อ region ทั้งหมด 9 region
      - ข้อมูลเป็นประเภท character
 3. Hemisphere 
      - เเบ่งออกเป็นสามอย่างคือ north south เเละ both
@@ -46,14 +47,19 @@ View(happiness)
      - เกณฑ์วัดระดับความสุข ตั้งเเต่ 0-10
      - ข้อมูลเป็นประเภท double
 5. HDI	
+     - Human Development Index by United Nations Development Programme
      - ข้อมูลเป็นประเภท integer
 6. GDP_PerCapita	
+     - Gross Domestic Product index
      - ข้อมูลเป็นประเภท double
 7. Beer_PerCapita	
+     - Liters ( per capita ) of beer consumption
      - ข้อมูลเป็นประเภท integer
 8. Spirit_PerCapita	
+     - Consumption of spirits drink ( per capita )
      - ข้อมูลเป็นประเภท integer
 9. Wine_PerCapita
+     - Wine consumption
      - ข้อมูลเป็นประเภท integer
 
 ## Step4: Cleaning Dataset
