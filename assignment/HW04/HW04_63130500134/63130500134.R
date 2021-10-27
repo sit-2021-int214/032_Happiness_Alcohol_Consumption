@@ -14,6 +14,16 @@ View(books)
 books %>% select(Rating, Book_title, Price)
 table(books$Rating)
 
+books %>% filter(Rating > 4) %>% select(Rating, Book_title, Price)
+
+books %>% select(Rating, Book_title, Price) %>% arrange(Rating)
+
+books %>% mutate(Price_TH = Price*33)
+
+books %>% group_by(Type) %>% summarise(sum_reviews = sum(as.numeric(Reviews), na.rm = TRUE))
+
+ggplot(books, aes(x=Type)) + geom_bar()
+
 # Part 3 ::
 # 1.Average of rating in each type of book
 books %>% group_by(Type) %>% select(Type, Rating) %>% summarise(avg = mean(Rating))
@@ -36,13 +46,19 @@ books %>% group_by(Type) %>% select(Type, Number_Of_Pages) %>% summarise(avg = m
 # 6.Average of price that book has the number of pages between 300 and 400
 books %>% filter(Number_Of_Pages > 300, Number_Of_Pages < 400) %>% summarise(avd_price = mean(Price))
 
-books %>% select(Rating,Reviews) %>% filter(Rating>3.5, Reviews>1000)
+books %>% filter(Rating>3.5 && Reviews >'1000') %>% select(Rating,Reviews) 
+
+# 7.Count of book that has rating less than 4 in each type 
+books %>% filter(Rating < 4) %>% group_by(Type) %>% count(sort = TRUE)
 
 # Part 4 ::
 # 1
 # Step 1: Creating a basic Bar Graph
 # Save to object
-books_bar<- ggplot(books,aes(x=Type)) + geom_bar()
+books_bar<- ggplot(books, aes(x=Type, fill=Type )) + 
+  geom_bar( ) +
+  scale_fill_hue(c = 40) 
+
 books_bar
 
 # Adding component
@@ -66,4 +82,6 @@ books_scatter
 # Step 4: Adding a line of best fit to a plot
 books_scatter + geom_smooth() 
 books_scatter + geom_smooth(method="lm") #linear model
+
+books %>% select(sum(Rating))
 
