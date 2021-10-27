@@ -1,4 +1,5 @@
 
+# Part ::
 # Library
 library(dplyr)
 library(ggplot2)
@@ -12,7 +13,6 @@ glimpse(books)
 View(books)
 
 # Part 2 ::
-
 books %>% select(Rating, Book_title, Price)
 table(books$Rating)
 
