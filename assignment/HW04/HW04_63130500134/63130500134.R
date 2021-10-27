@@ -2,6 +2,7 @@
 # Library
 library(dplyr)
 library(ggplot2)
+library(stringr)
 
 # Dataset
 books <- read.csv("prog_book.csv")
@@ -11,6 +12,7 @@ glimpse(books)
 View(books)
 
 # Part 2 ::
+
 books %>% select(Rating, Book_title, Price)
 table(books$Rating)
 
@@ -51,6 +53,10 @@ books %>% filter(Rating>3.5 && Reviews >'1000') %>% select(Rating,Reviews)
 # 7.Count of book that has rating less than 4 in each type 
 books %>% filter(Rating < 4) %>% group_by(Type) %>% count(sort = TRUE)
 
+# 8.List book title and price of all books for beginner
+b <- str_subset(books$Book_title, "Beginner")
+books %>% filter(Book_title %in% b) %>% select(Book_title, Price)
+
 # Part 4 ::
 # 1
 # Step 1: Creating a basic Bar Graph
@@ -82,6 +88,4 @@ books_scatter
 # Step 4: Adding a line of best fit to a plot
 books_scatter + geom_smooth() 
 books_scatter + geom_smooth(method="lm") #linear model
-
-books %>% select(sum(Rating))
 
