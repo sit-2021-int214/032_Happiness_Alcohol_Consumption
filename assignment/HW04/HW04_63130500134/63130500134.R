@@ -54,8 +54,8 @@ books %>% filter(Rating>3.5 && Reviews >'1000') %>% select(Rating,Reviews)
 books %>% filter(Rating < 4) %>% group_by(Type) %>% count(sort = TRUE)
 
 # 8.List book title and price of all books for beginner
-b <- str_subset(books$Book_title, "Beginner")
-books %>% filter(Book_title %in% b) %>% select(Book_title, Price)
+beginner <- str_subset(books$Book_title, "Beginner")
+books %>% filter(Book_title %in% beginner) %>% select(Book_title, Price)
 
 # Part 4 ::
 # 1
