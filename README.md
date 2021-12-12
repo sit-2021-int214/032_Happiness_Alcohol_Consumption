@@ -30,8 +30,8 @@ dataset นี้รายงานข้อมูลของคะแนนค
 ### Important Files in Repository
 
 - [code_eda](./code_eda.R) : Exploratory Data Analysis
-- [Happiness_Alcohol_Comsumption.csv](./HappinessAlcoholConsumption.csv): Dataset
-- [happiness.csv](./happiness.csv): Clean Dataset
+- [Happiness_origin.csv](./Happiness_origin.csv): Dataset
+- [Happiness_clean.csv](./Happiness_clean.csv): Clean Dataset
 
 ### References
 
