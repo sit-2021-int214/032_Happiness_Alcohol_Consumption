@@ -23,7 +23,7 @@ dataset นี้รายงานข้อมูลของคะแนนค
 ## Table of Contents
 
 1. [Exploratory Data Analysis](./01_explore.md)
-2. [Data Visualization]()
+2. [Data Visualization](./02_DataVisual.md)
 
 ## Resources
 
