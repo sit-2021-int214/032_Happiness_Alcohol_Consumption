@@ -24,7 +24,7 @@ dataset นี้รายงานข้อมูลของคะแนนค
 
 1. [Exploratory Data Analysis](./01_explore.md)
 2. [Data Visualization](./02_DataVisual.md)
-3. [Analytical Inferential Statistics](Analytical Inferential Statistics.md)
+3. [Data Visualization](./01_explore.md)
 
 ## Resources
 
