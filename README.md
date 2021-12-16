@@ -23,7 +23,7 @@ dataset นี้รายงานข้อมูลของคะแนนค
 ## Table of Contents
 
 1. [Exploratory Data Analysis](./01_explore.md)
-2. [Data Visualization](https://app.powerbi.com/view?r=eyJrIjoiYjRmYzk2ZTEtOGEyOC00MWM4LWI2ZDgtOTE5MmRjZTkyMDlkIiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D&pageName=ReportSectione3da63ffa0970c6b0c42)
+2. [Data Visualization](https://app.powerbi.com/view?r=eyJrIjoiYjRmYzk2ZTEtOGEyOC00MWM4LWI2ZDgtOTE5MmRjZTkyMDlkIiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D&pageName=ReportSectionf22816d9148d2d00151a)
 3. [Analytical Inferential Statistics](./Hypothesis_test.md)
 
 ## Resources
